@@ -1,3 +1,4 @@
+import setuptools
 from distutils.core import setup
 setup(
   name = 'readability_lola',         # How you named your package folder (MyLib)
