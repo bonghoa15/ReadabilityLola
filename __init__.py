@@ -1,2 +1,2 @@
-from readability.hindi import Hindi
-from readability.bahasa import Bahasa
+from readability_lola.hindi import Hindi
+from readability_lola.bahasa import Bahasa
