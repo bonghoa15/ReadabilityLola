@@ -1,3 +1,5 @@
+![](https://github.com/bonghoa15/ReadabilityLola/blob/master/Pink%20Simple%20Thank%20You%20Flyer%20Landscape.png)
+
 The goal of this repo is to implement readability score of local languages including: Bahasa, Hindi, Arabic.
 1.	Readability 
 Is the quality of your writing. If the readability of your text is high, people will be able to understand your sentences easily. If the readability is low, people still might understand what you are saying, but it is likely to be a draining experience. Instead of skimming quickly over your writing, reader needs to spend significant amount of energy unpacking big vocabulary and complex sentence structure. Briefly, It demands more concentration from your reader. 
