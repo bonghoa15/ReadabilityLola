@@ -1,7 +1,10 @@
 
 ![](https://github.com/bonghoa15/ReadabilityLola/blob/master/banner_bonghoa.jpg)
 
-<code> <i>INSTALLATION</i> <b> <span style="background-color: #FFFF00">==Pip install readabilitylola==</span> <b> </code>
+<code> <i>INSTALLATION</i> 
+```
+Pip install readabilitylola
+```
 
 The goal of this repo is to implement readability score of local languages including: Bahasa, Hindi
 1.	Readability 
