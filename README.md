@@ -1,7 +1,13 @@
+---
+noteId: "a8340c90759e11ee9aae31bfc7c1e6bf"
+tags: []
 
-![](https://github.com/bonghoa15/ReadabilityLola/blob/master/Bong%20hoa.png)
+---
 
-<mark>nstallation: $$Pip install readabilityLola$$</mark>
+
+![](https://github.com/bonghoa15/ReadabilityLola/blob/master/banner_bonghoa.jpg)
+
+<code> <i>INSTALLATION</i> <b>Pip instal readabillitylola</b> </code>
 
 The goal of this repo is to implement readability score of local languages including: Bahasa, Hindi
 1.	Readability 
