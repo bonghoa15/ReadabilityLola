@@ -1,43 +1,84 @@
----
-noteId: "249684e075a211ee9aae31bfc7c1e6bf"
-tags: []
+**ReadabilityLola – Local Language Readability Scoring**
 
----
+📌 **Overview**
 
+ReadabilityLola is a Python library to compute readability scores for local languages, currently supporting Bahasa and Hindi. The goal is to provide metrics that help evaluate the ease of reading texts in languages where readability research is limited.
 
-![](https://github.com/bonghoa15/ReadabilityLola/blob/master/banner_bonghoa.jpg)
+Readability measures how easy a text is to understand. High readability allows readers to process sentences quickly and effortlessly, while low readability increases cognitive load due to complex sentence structures or difficult vocabulary.
 
-<code> <i>INSTALLATION</i> 
-
-```
-Pip install readabilitylola 
+⚙️ **Installation**
+```bash
+pip install readabilitylola
 ```
 
-The goal of this repo is to implement readability score of local languages including: Bahasa, Hindi
-1.	Readability 
-Is the quality of your writing. If the readability of your text is high, people will be able to understand your sentences easily. If the readability is low, people still might understand what you are saying, but it is likely to be a draining experience. Instead of skimming quickly over your writing, reader needs to spend significant amount of energy unpacking big vocabulary and complex sentence structure. Briefly, It demands more concentration from your reader. 
-2.	Readability score
-A computer-calculated index which can tell how easy it will be for someone to read a particular piece of text. Readability score is well defined in English language for a long time. However, there is little research for other languages. Also, some popular formula of computing readability score in English is not suitable in other language. So far, I have found the score is researched for Bahasa, Hindi. <br />
+⚙️ **Features**
 
-================ <br />
-Bahasa readability score formula: 
+- Compute **readability scores** for local languages, currently supporting **Bahasa** and **Hindi**.
+- Easy-to-use **Python API** for text analysis
+- Modular and reusable code suitable for **research or linguistic analysis**
+
+💡 **Usage Example**
+```python
+from readabilitylola import ReadabilityLola
+
+
+text = "Your sample text here"
+score = ReadabilityLola(language='Bahasa').compute(text)
+print(f"Readability score: {score}")
+
+```
+## 🧮 Readability Formulas
+
+### Bahasa
+```math
+
+Score = -13.988 + 0.3793 × (300 / S) + 0.0207 × (d + k)
+
+```
+
+**Where:**  
+- **S** = Number of sentences in 300 words  
+- **d** = Number of syllables  
+- **k** = Number of potentially difficult words:  
+
+`k = 5 × (Kata Ganda + Diftong + Kata Pinjaman + Kekeliruan Huruf)`
+
+**Bahasa formula** considers:
+  - Sentence length
+  - Number of syllables
+  - Difficult words, including:
+    - Kata Ganda
+    - Diftong
+    - Kata Pinjaman
+    - Kekeliruan Huruf
+
+
+### Hindi
 
 ```math
--13.988 + 0.3793(300/S) + 0.0207(d+ k)
+
+Score = -2.34 + 2.14 × AWL + 0.01 × PSW
 ```
 
-Where: <br />
-S: number of sentence in 300 words <br />
-d: number of syllables <br />
-k: potentiall difficullt words including Kata Ganda,Diftong, Kata Pinjaman and Kekeliruan huruf. Specifically k= 5*(Kata Ganda+Diftong+Kata Pinjaman+Kekeliruan Huruf) <br />
-================ <br />
-Hindi readability score formula: 
+**Hindi formula** considers:
+  - Average word length (AWL)
+  - Poly-syllabic words (PSW: words with more than 2 syllables)
 
-```math
--2.34 + 2.14AWL +  0.01PSW 
-```
 
-Where: <br />
-AWL: average word length <br />
-PSW: Poly-syllabic words are the words whose count of syllable exceeds 2
+📌 Notes
 
+Readability formulas are heuristic-based; accuracy may vary across texts.
+
+Currently supports Bahasa and Hindi; formulas for other languages are research topics.
+
+Useful for linguistic analysis, content optimization, and readability research.
+
+✅ Skills Highlighted
+
+Python (library development, modular design)
+
+Text analysis & NLP basics (tokenization, syllable counting, difficult word detection)
+
+Cross-linguistic application of computational metrics
+
+Clean documentation suitable for portfolio / research submission
